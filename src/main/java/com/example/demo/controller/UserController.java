@@ -29,6 +29,7 @@ public class UserController {
     @RequestMapping(value = "",method = RequestMethod.POST)
     @ResponseBody
     public User postUser(@RequestBody User user){
+        log.info("post user:{}",user);
         return userService.save(user);
     }
 }

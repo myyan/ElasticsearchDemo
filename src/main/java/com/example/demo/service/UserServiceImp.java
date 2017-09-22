@@ -14,12 +14,10 @@ public class UserServiceImp implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    @Override
     public User findByName(String name) {
         return userRepository.findByName(name);
     }
 
-    @Override
     public User save(User user) {
         return userRepository.save(user);
     }
