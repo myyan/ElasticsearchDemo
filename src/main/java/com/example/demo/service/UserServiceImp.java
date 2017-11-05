@@ -24,6 +24,10 @@ public class UserServiceImp implements UserService {
         return userRepository.save(user);
     }
 
+    public void save(List<User> users) {
+        userRepository.saveAll(users);
+    }
+
     public List<User> deleteByName(String name){
         return userRepository.deleteByName(name);
     }

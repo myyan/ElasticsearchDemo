@@ -13,6 +13,8 @@ public interface UserService {
 
     User save(User user);
 
+    void save(List<User> users);
+
     List<User> deleteByName(String name);
 
 
