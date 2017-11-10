@@ -16,6 +16,7 @@ public class UserServiceImp implements UserService {
     @Autowired
     private UserRepository userRepository;
 
+
     public List<User> findByName(String name) {
         return userRepository.findByName(name);
     }
