@@ -1,6 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.service.core;
 
 import com.example.demo.model.User;
+import com.example.demo.service.api.BatchService;
+import com.example.demo.service.api.UserService;
 import com.google.common.base.Stopwatch;
 import com.google.common.util.concurrent.*;
 import lombok.extern.slf4j.Slf4j;
