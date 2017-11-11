@@ -1,12 +1,11 @@
-package com.example.demo.service;
+package com.example.demo.service.core;
 
+import com.example.demo.service.api.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by heiqie on 2017/11/10.
