@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @Configuration
 @ImportResource("classpath:**/*.xml")
+@ComponentScan
 public class Config {
 
 }
