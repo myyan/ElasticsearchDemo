@@ -170,10 +170,8 @@ public class BatchServiceImp implements BatchService {
 
     private List<Consumer> startConsumer(ConcurrentLinkedQueue<User> blockingQueue, int queueSize, UserService userService) {
         List<Consumer> list = new ArrayList<>();
-        for (int i = 0; i < 2; i++) {
-            Consumer consumer = UserConsumer.begin(queueSize, blockingQueue, userService);;
-            list.add(consumer);
-        }
+        Consumer consumer = UserConsumer.begin(queueSize, blockingQueue, userService);
+        list.add(consumer);
         return list;
     }
 
