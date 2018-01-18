@@ -32,11 +32,13 @@
 		</dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-elasticsearch -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-elasticsearch</artifactId>
-			<version>3.0.0.RC2</version>
+			<version>3.0.2.RELEASE</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -67,6 +69,21 @@
 		</dependency>
 
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+			<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons -->
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-commons</artifactId>
+				<version>2.0.2.RELEASE</version>
+			</dependency>
+
+
+		</dependencies>
+	</dependencyManagement>
+
 
 	<build>
 		<plugins>
