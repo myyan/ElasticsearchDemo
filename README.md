@@ -1,2 +1,2 @@
 # ElasticsearchDemo
-- this is a demp which  springboot integrate elasticsearch
+- this is a demo which springboot integrate elasticsearch
